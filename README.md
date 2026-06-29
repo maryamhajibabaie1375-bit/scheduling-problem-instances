@@ -1,6 +1,6 @@
 # Scheduling Problem: Mathematical Model & Metaheuristic in C#
 
-This repository contains problem instances . The problem is characterized by varying numbers of jobs, machines, operators, and Time-of-Use (TOU) periods, with specific instance parameters encoded directly in the filenames.
+This repository contains problem instances . The filename of each text file consists of four integers, which denote the number of jobs, machines, operators, and TOU periods, respectively.
 
 ## ?? Repository Structure
 - `Data-Small-Instance/`: Small-scale Instances.
@@ -16,13 +16,14 @@ Each `.txt` file follows a specific structure used by the C# parser:
 - `e (job, machine)`: Energy consumption rate of job  on machine   
 - `b (job, machine)`: Machines eligible
 - `u (job, op)`: Operators eligible
+- `fp`:Start of period
+- `ep`:End of period
+- `si`:Setup time of jobs 
+- `tc`:Tardiness cost of jobs 
 
 ## ?? Prerequisites & Usage
 - **Language:** C# (.NET Core or Framework)
 - **Solver:** (e.g., IBM ILOG CPLEX / Gurobi / Or-Tools) - *CPLEX*
 - **IDE:** Visual Studio 2022 or VS Code
 
-To run the solver:
-1. Clone the repository.
-2. Point the file path to one of the instances in the `Data-*` folders.
-3. Run the solution.
+
