@@ -14,8 +14,8 @@ Each `.txt` file follows a specific structure used by the C# parser:
 - `dd`: Due Date of jobs
 - `p`: Processing Time of jobs
 - `e (job, machine)`: Energy consumption rate of job  on machine   
-- `b (job, machine)`: Machine eligibles
-- `u (job, op)`: Operator eligibles
+- `b (job, machine)`: Machines eligible
+- `u (job, op)`: Operators eligible
 
 ## ?? Prerequisites & Usage
 - **Language:** C# (.NET Core or Framework)
